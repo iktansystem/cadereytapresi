@@ -1,167 +1,204 @@
 @charset "UTF-8";
-/* General Styles */
+/*
+===============================
+VARIABLES SASS
+===============================
+Define la paleta de colores y la tipografía global del sitio.
+*/
+/* Color principal para elementos destacados */
+/* Color secundario complementario */
+/* Color de acento para resaltar elementos clave */
+/* Gris claro para texto secundario */
+/* Gris oscuro para fondos */
+/* Blanco puro para texto y fondos */
+/* Blanco grisáceo para contrastes sutiles */
+/* Fuente principal */
+/*
+===============================
+ESTILOS GENERALES
+===============================
+*/
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif; /* Aplica la fuente principal en todo el sitio */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
 }
 
-/* Header Section */
+/*
+===============================
+HEADER (Encabezado)
+===============================
+*/
 .header {
-  width: 100%;
+  width: 100%; /* El encabezado abarca todo el ancho de la pantalla */
 }
 
-/* Top Header Section */
 .header-top {
-  background-color: #ffffff;
-  border-bottom: 3px solid #972850;
-  padding: 10px 0;
+  background-color: #ffffff; /* Fondo blanco */
+  border-bottom: 3px solid #972850; /* Borde inferior en el color principal */
+  padding: 10px 0; /* Espaciado vertical interno */
 }
 
 .header-top-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex; /* Utiliza Flexbox para distribuir el contenido */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  align-items: center; /* Alineación vertical de los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
 }
 
 .logo img {
-  height: 90px;
-  margin-bottom: 10px;
+  height: 90px; /* Altura del logo */
+  margin-bottom: 10px; /* Separación inferior */
 }
 
 .banner img {
-  height: 60px; /* Adjust the size of the banner */
-  max-width: 100%;
-  margin-bottom: 10px;
+  height: 60px; /* Ajusta la altura del banner */
+  max-width: 100%; /* Escala el ancho según el contenedor */
+  margin-bottom: 10px; /* Separación inferior */
 }
 
-/* Social Icons */
+/*
+===============================
+ÍCONOS SOCIALES
+===============================
+*/
 .social-icons {
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  font-size: 1.3rem; /* Tamaño de los íconos */
+  display: flex; /* Distribuye los íconos horizontalmente */
+  justify-content: center; /* Centra los íconos */
+  gap: 15px; /* Espaciado entre íconos */
 }
 
 .social-icons a {
-  color: #972850;
-  margin-right: 0;
+  color: #972850; /* Color principal para los enlaces */
+  margin-right: 0; /* Elimina márgenes adicionales */
 }
 
-/* Breakpoints for responsive design */
+/*
+===============================
+DISEÑO RESPONSIVO PARA HEADER
+===============================
+*/
 @media (max-width: 768px) {
   .header-top-content {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    text-align: center; /* Centra el texto */
   }
   .logo img, .banner img {
-    margin: 0 auto;
-    padding-bottom: 1rem;
+    margin: 0 auto; /* Centra las imágenes */
+    padding-bottom: 1rem; /* Espaciado inferior */
+    height: 7rem; /* Ajusta la altura para pantallas pequeñas */
   }
   .social-icons {
-    margin-top: 10px;
+    margin-top: 10px; /* Espaciado superior para los íconos */
   }
 }
-/* Navigation Bar */
+/*
+===============================
+BARRA DE NAVEGACIÓN
+===============================
+*/
 .navbar {
-  background-color: #972850;
+  background-color: #972850; /* Fondo de la barra de navegación */
 }
 
 .nav-item {
-  margin: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff; /* Cambia el color de la letra a blanco */
+  margin: 0 15px; /* Espaciado horizontal entre elementos del menú */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  font-weight: 700; /* Aumenta el grosor del texto */
+  color: #ffffff; /* Color del texto */
 }
 
 .nav-item a {
-  color: #ffffff; /* Asegura que los enlaces también sean blancos */
-  text-decoration: none; /* Elimina subrayados de los enlaces */
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
 }
 
 .nav-item a:hover {
-  color: #f8f9fa; /* Agrega un color ligeramente distinto al pasar el mouse */
+  color: #f8f9fa; /* Cambia el color al pasar el cursor */
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
+/*
+===============================
+ESTILOS DEL CARRUSEL
+===============================
+*/
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem; /* Espaciado inferior */
 }
 
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 30rem;
+  display: flex; /* Centra el contenido del carrusel */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: auto; /* Permite ajustar la altura dinámicamente */
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+.carousel-img {
+  max-height: 500px; /* Altura máxima de las imágenes */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  -o-object-fit: cover;
+     object-fit: cover; /* Mantiene las proporciones sin distorsión */
+  -o-object-position: center;
+     object-position: center; /* Centra la parte visible de las imágenes */
 }
 
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+.carousel-caption {
+  bottom: 2rem; /* Posición inferior de las leyendas */
+  z-index: 10; /* Eleva las leyendas sobre el fondo */
+  color: #fff; /* Color del texto */
 }
 
-/* rtl:end:ignore */
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -0.05rem;
-}
-
-/* rtl:end:remove */
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+@media (max-width: 768px) {
+  .carousel-item {
+    height: auto; /* Permite que la altura se ajuste al contenido */
   }
-  .featurette-heading {
-    font-size: 50px;
+  .carousel-img {
+    max-height: 300px; /* Reduce la altura en pantallas pequeñas */
   }
 }
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 500px; /* Altura consistente en pantallas medianas */
   }
 }
-.carousel-item img, .carousel-item video {
-  max-height: 500px;
+/*
+===============================
+FOOTER
+===============================
+*/
+footer {
+  background: #343a40; /* Fondo oscuro para el pie de página */
 }
 
-.video-section {
-  background-color: #96b464;
-  padding: 4em 0;
+footer p {
+  color: #f8f9fa; /* Texto claro para mayor legibilidad */
+  text-align: start; /* Alineación inicial */
+  margin-bottom: 1rem; /* Espaciado inferior */
 }
 
-.footer {
-  background: #8c8c8c;
+footer h2, footer .h2, footer h6, footer .h6 {
+  color: #f8f9fa; /* Encabezados claros */
+  text-align: start; /* Alineación inicial */
+  margin-bottom: 1rem; /* Espaciado inferior */
 }
-.footer .address {
-  color: #e69bb4;
+
+footer a {
+  color: #f8f9fa; /* Enlaces claros */
+  text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.b-example-divider {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 3rem; /* Altura del divisor */
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+  border: solid rgba(0, 0, 0, 0.15); /* Borde semitransparente */
+  border-width: 1px 0; /* Bordes superior e inferior */
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); /* Sombra interna */
 }
 
 /*!
