@@ -4,5 +4,18 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveSassCompile.settings.includeItems": [
+
+		],
+		"liveSassCompile.settings.formats": [
+
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "./assets/css",
+				"savePathReplacementPairs": null
+			}
+		]
+	}
 }
