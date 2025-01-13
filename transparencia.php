@@ -53,7 +53,20 @@ foreach ($categorias as $cat) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestor de Archivos</title>
+ <!-- Etiquetas para SEO-->
+ <meta name="description"
+        content="Sitio web del Municipio de Cadereyta de Montes" />
+    <meta name="keywords"
+        content="Cadereyta de Montes,presidencia municipal" />
+    <meta name="author" content="Cadereyta de Montes" />
+    <meta property="og:title" content="Cadereyta de Montes" />
+    <meta property="og:description"
+        content="Servir para transformar" />
+    <meta property="og:image" content="https://cadereytademontes.gob.mx/assets/images/logo/Logotipo-Municipio-Blanco-H.png" />
+    <meta property="og:url" content="https://cadereytademontes.gob.mx" />
+    <title>Cadereyta | Transparencia</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logo/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/14db5d9416.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -103,7 +116,7 @@ foreach ($categorias as $cat) {
                 ?>
                         <div class="col-12 col-md-4 col-lg-3">
                             <div class="card text-center">
-                            <img class="card-img-top" src="assets/images66/<?php echo ucfirst($fraccionName) . '.svg' ?>" alt="Card image cap">
+                            <img class="card-img-top" src="assets/images/<?php echo ucfirst($cat)?>/<?php echo ucfirst($fraccionName) . '.svg' ?>" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="modal-title"> <?php echo $fraccionTitle; ?> </h5>
                                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFiles-<?php echo $cat; ?>-<?php echo $fraccionName; ?>">
@@ -154,12 +167,44 @@ foreach ($categorias as $cat) {
     <?php require("assets/layouts/footer.php"); ?>
 
     <script>
-        function changeFilter(category) {
-            const year = document.getElementById(`year-${category}`).value;
-            const trim = document.getElementById(`trim-${category}`).value;
-            window.location.href = `?categoria=${category}&year=${year}&trim=${trim}`;
+    document.addEventListener("DOMContentLoaded", function() {
+        // Función para redirigir manteniendo la sección activa
+        function changeFilter(categoria) {
+            const year = document.getElementById(`year-${categoria}`).value;
+            const trim = document.getElementById(`trim-${categoria}`).value;
+
+            // Redirigir con los parámetros seleccionados y fragmento para mantener la sección
+            window.location.href = `?categoria=${categoria}&year=${year}&trim=${trim}#section-${categoria}`;
         }
-    </script>
+
+        // Asociar los selectores a sus funciones correspondientes
+        document.getElementById("year-art66").addEventListener("change", function() {
+            changeFilter("art66");
+        });
+
+        document.getElementById("trim-art66").addEventListener("change", function() {
+            changeFilter("art66");
+        });
+
+        document.getElementById("year-art67").addEventListener("change", function() {
+            changeFilter("art67");
+        });
+
+        document.getElementById("trim-art67").addEventListener("change", function() {
+            changeFilter("art67");
+        });
+
+        // Desplazarse automáticamente al fragmento de la URL al cargar
+        const hash = window.location.hash;
+        if (hash) {
+            const section = document.querySelector(hash);
+            if (section) {
+                section.scrollIntoView();
+            }
+        }
+    });
+</script>
+
 </body>
 
 </html>

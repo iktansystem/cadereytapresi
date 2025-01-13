@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <!-- Etiquetas para SEO-->
+    <meta name="description"
+        content="Sitio web del Municipio de Cadereyta de Montes" />
+    <meta name="keywords"
+        content="Cadereyta de Montes,presidencia municipal" />
+    <meta name="author" content="Cadereyta de Montes" />
+    <meta property="og:title" content="Cadereyta de Montes" />
+    <meta property="og:description"
+        content="Servir para transformar" />
+    <meta property="og:image" content="https://cadereytademontes.gob.mx/assets/images/logo/Logotipo-Municipio-Blanco-H.png" />
+    <meta property="og:url" content="https://cadereytademontes.gob.mx" />
+    <title>Cadereyta</title>
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo/favicon.ico" type="image/x-icon" />
     <!-- Link to external CSS file -->
@@ -18,8 +29,8 @@
 </head>
 
 <body>
-            <!-- header Start -->
-            <?PHP   
+    <!-- header Start -->
+    <?PHP
     require("assets/layouts/header.php");
     ?>
     <!-- header End -->
@@ -27,35 +38,35 @@
     <!-- Main Content -->
     <main>
         <!-- Carousel: Adaptable to Screen Size -->
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg-dark"
-                aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="bg-dark"
-                aria-label="Slide 2"></button>
-    </div>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg-dark"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="bg-dark"
+                    aria-label="Slide 2"></button>
+            </div>
 
-    <!-- Carousel Items -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="assets/images/carousel/Carrusel-Predial.png" class="d-block w-100 carousel-img" alt="Slide 1">
-        </div>
-        <div class="carousel-item">
-            <img src="assets/images/carousel/Carrusel-Servir.png" class="d-block w-100 carousel-img" alt="Slide 2">
-        </div>
-    </div>
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/carousel/Carrusel-Predial.png" class="d-block w-100 carousel-img" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/carousel/Carrusel-Servir.png" class="d-block w-100 carousel-img" alt="Slide 2">
+                </div>
+            </div>
 
-    <!-- Navigation Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
+            <!-- Navigation Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
 
 
@@ -63,13 +74,13 @@
 
     </main>
 
- 
-        <!-- footer Start -->
-        <?PHP   
+
+    <!-- footer Start -->
+    <?PHP
     require("assets/layouts/footer.php");
     ?>
     <!-- footer End -->
-    
+
     <!-- Bootstrap JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
