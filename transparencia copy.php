@@ -91,7 +91,7 @@ $files = is_dir($folder_path) ? get_files($folder_path) : [];
                 </div>
             </div>
             <!-- Breaking News End -->
-            <h2 class="text-center">Categoría: <?php echo ucfirst($categoria); ?></h2>
+            <h2 class="text-center">Categoría: Art66</h2>
 
             <div class="row my-3">
                 <div class="col-md-6">
@@ -132,7 +132,17 @@ $files = is_dir($folder_path) ? get_files($folder_path) : [];
                             <div class="card text-center">
                                 <img class="card-img-top" src="assets/images66/<?php echo ucfirst($fraccionName) . '.svg' ?>" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo ucfirst($fraccionName); ?></h5>
+                                <h5 class="modal-title">
+                                        <?php
+                                        $fraccionTitle = match ($fraccionName) {
+                                            'fracc1' => 'I Normatividad',
+                                            'fracc2' => 'II Estructura Orgánica',
+                                            'fracc3' => 'III Atribuciones, metas y objetivos',
+                                            default => 'Fracción Desconocida'
+                                        };
+                                        echo "$fraccionTitle";
+                                        ?>
+                                    </h5>
                                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFiles-<?php echo $fraccionName; ?>">
                                         Ver Archivos
                                     </button>
@@ -146,7 +156,17 @@ $files = is_dir($folder_path) ? get_files($folder_path) : [];
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="modalLabel-<?php echo $fraccionName; ?>">
-                                            Archivos de <?php echo ucfirst($fraccionName); ?>
+                                        <h5 class="modal-title">
+                                        <?php
+                                        $fraccionTitle = match ($fraccionName) {
+                                            'fracc1' => 'I Normatividad',
+                                            'fracc2' => 'II Estructura Orgánica',
+                                            'fracc3' => 'III Atribuciones, metas y objetivos',
+                                            default => 'Fracción Desconocida'
+                                        };
+                                        echo "$fraccionTitle";
+                                        ?>
+                                    </h5>
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
