@@ -12,6 +12,7 @@ $gray2-color: #343a40; /* Gris oscuro para fondos */
 $white-color: #ffffff; /* Blanco puro para texto y fondos */
 $white2-color: #f8f9fa; /* Blanco grisáceo para contrastes sutiles */
 $font-family: 'Poppins', sans-serif; /* Fuente principal */
+$gold-color: #d4a017;
 
 /*
 ===============================
@@ -209,234 +210,12 @@ ESTILOS DEL CARRUSEL
 
  
 
+
 /*
 ===============================
-FOOTER
+Divisor horizontal
 ===============================
 */
-.enlaces{
-    color: #414761;
-    text-decoration: none;
-}
-
-
-.enlaces:hover{
-    color: #92999f;
-    font-weight: 600;
-}
-	
-.colors-header{
-    width: 70%;
-	display: flex;
-	justify-items: center;
-
-}
-
-.infocontacto{
-    display: block;
-}
-
-.heraldica{
-    height: 150px;
-}
-
-.icons-contacto{
-    width: 22px;
-    height: 16px;
-	padding-right: 7px;
-}
-
-.footer-distributed{
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-    text-align: left;
-    padding: 50px 80px;
-    justify-content: center;
-}
-
-
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-.footer-distributed .footer-left{
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-}
-
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #414761;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  lightseagreen;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #414761;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #414761;
-	font-size: 12px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 30%;
-	padding: 0px 0px 0px 20px;
-}
-
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #414761;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 14px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #414761;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-    padding-bottom: 20px;
-    font-size: 12px;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color:  #414761;
-	text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 29%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-.footer-distributed h2 {
-    color: #414761;
-    padding-bottom: 20px;
-}
-
-.footer-distributed h3 {
-    color: #414761;
-    padding-bottom: 20px;
-}
-.footer-distributed h6 {
-	color: #414761;
-	font-size: 14px;
-}
-
-.footer-company-about {
-    padding-left: 2rem;
-}
-.footer-right h2{
-    padding-left: 2rem;
-}
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-    
-}
-
-
 .b-example-divider {
     width: 100%; /* Ocupa todo el ancho */
     height: 3rem; /* Altura del divisor */
@@ -445,7 +224,100 @@ FOOTER
     border-width: 1px 0; /* Bordes superior e inferior */
     box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); /* Sombra interna */
 }
+/*
+===============================
+FOOTER
+===============================
+*//* General Footer Styling */
+/* General Footer Styling */
+.footer {
+    background-color: $primary-color; /* Color de fondo */
+    color: $white-color; /* Color de texto */
+    border-top: 4px solid $gold-color; /* Línea superior */
+    padding: 2rem 0; /* Espaciado interno */
+}
 
+.footer-logo {
+    max-width: 80px; /* Ajuste de tamaño */
+    height: auto; /* Mantener proporción */
+}
+
+.me-3{
+    max-width: 120px; /* Ajuste de tamaño */
+    height: auto; /* Mantener proporción */
+}
+.footer p, .footer h6 {
+    text-align: left !important;
+}
+.footer h6 {
+    text-transform: uppercase; /* Mayúsculas */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 10px; /* Espaciado */
+}
+
+.footer p {
+    text-transform: uppercase; /* Mayúsculas */
+    font-size: 0.9rem; /* Tamaño del texto */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.footer a {
+    text-decoration: none; /* Sin subrayado */
+    color: $white-color; /* Color de los enlaces */
+    transition: color 0.3s; /* Transición */
+}
+
+.footer a:hover {
+    color: $gold-color; /* Color al pasar el ratón */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 60px; /* Reducir tamaño */
+    }
+    .me-3{
+        max-width: 80px; /* Ajuste de tamaño */
+        height: auto; /* Mantener proporción */
+    }
+    .footer p{
+        font-size: small;
+    }
+    .footer .text-md-start {
+        text-align: center !important; /* Centrar texto */
+    }
+
+    .footer .text-md-end {
+        text-align: center !important; /* Centrar texto */
+    }
+    .text-md-start{
+        padding-bottom: 1.2rem;
+    }
+
+}
+@media (max-width: 1024px) {
+    .footer-logo {
+        max-width: 60px; /* Reducir tamaño */
+    }
+    .me-3{
+        max-width: 80px; /* Ajuste de tamaño */
+        height: auto; /* Mantener proporción */
+    }
+    .footer .text-md-start {
+        text-align: center !important; /* Centrar texto */
+        
+    }
+    .footer p{
+        font-size: small;
+    }
+
+    .footer .text-md-end {
+        text-align: center !important; /* Centrar texto */
+        font-size: 1rem;
+    }
+
+
+}
 //
 // Include any default variable overrides here (though functions won't be available)
 

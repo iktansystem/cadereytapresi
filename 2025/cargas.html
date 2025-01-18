@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadereyta de montes | Carga de archivos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cargas.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Upload File to Server</h1>
+        <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data" class="mt-4">
+            <div class="mb-3">
+                <label for="folderSelect" class="form-label">Select Folder:</label>
+                <select id="folderSelect" name="folder" class="form-select" required>
+                    <option value="">Choose a folder...</option>
+                    <option value="comsocial">Comunicación Social</option>
+                    <option value="admindif">Administración DIF</option>
+                    <option value="agro">Desarrollo Agropecuario</option>
+                    <option value="albe">Albergue DIF</option>
+                    <option value="ac">Atención Ciudadana</option>
+                    <option value="ama">Programa AMA</option>
+                    <option value="ame">Casa AME</option>
+                    <option value="cam">Casa Adulto Mayor</option>
+                    <option value="dcom">Desarrollo Comunitario</option>
+                    <option value="deco">Desarrollo Económico</option>
+                    <option value="du">Desarrollo Urbano</option>
+                    <option value="dsl">Desarrollo Social</option>
+                    <option value="dirgob">Dirección de Gobierno</option>
+                    <option value="dif">Dirección DIF</option>
+                    <option value="imm">Instituto de la Mujer</option>
+                    <option value="om">Oficialía Mayor</option>
+                    <option value="oit">Organo Interno de Control</option>
+                    <option value="juri">Juridico</option>
+                    <option value="op">Obras Públicas</option>
+                    <option value="patri">Patrimonio</option>
+                    <option value="procu">Procuraduría DIF</option>
+                    <option value="pali">Programa Alimentarios</option>
+                    <option value="pc">Protección Civil</option>
+                    <option value="psi">Psicología</option>
+                    <option value="rh">Recursos Humanos</option>
+                    <option value="rc">Registro Civil</option>
+                    <option value="sha">Secretaría del H. Ayuntamiento</option>
+                    <option value="sspm">Seguridad Púbica</option>
+                    <option value="sm">Servicios Municipales</option>
+                    <option value="tes">Tesorería</option>
+                    <option value="ts">Trabajo Social</option>
+                    <option value="uai">Unidad de Acceso a la Información</option>
+                    
+                    
+                    <option value="subcul">Sub Culturales</option>
+                    <option value="ijuve">Instituto de la Juventud</option>
+                    <option value="secpart">Secretaria particular</option>
+
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="fileInput" class="form-label">Select File:</label>
+                <input type="file" id="fileInput" name="file" class="form-control"
+                    accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx" required>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
