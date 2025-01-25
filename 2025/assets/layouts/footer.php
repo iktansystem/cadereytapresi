@@ -40,9 +40,9 @@
 
             <!-- Redes Sociales -->
             <div class="col-md-2 text-center text-md-end ">
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="https://www.facebook.com/people/Municipio-de-Cadereyta-Qro-2024-2027/61566268005211/" target="_blank" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com/municipiocadereyta?igsh=aWpwenEwdnA4cGd4" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.youtube.com/@MunicipiodeCadereytaQro/videos" target="_blank" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
                 <a href="#" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a>
             </div>
         </div>

@@ -23,7 +23,7 @@
                     <div class="social-icons col-12 col-md-2 col-lg-3">
                         <a href="https://www.facebook.com/people/Municipio-de-Cadereyta-Qro-2024-2027/61566268005211/"
                             target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/municipiocadereyta/?igsh=aWpwenEwdnA4cGd4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.youtube.com/@MunicipiodeCadereytaQro/videos" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
                         <a href="#"><i class="fa-brands fa-tiktok"></i></a>

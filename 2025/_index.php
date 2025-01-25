@@ -45,8 +45,6 @@
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="bg-dark"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="bg-dark"
-                    aria-label="Slide 3"></button>
             </div>
 
             <!-- Carousel Items -->
@@ -56,9 +54,6 @@
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/carousel/Carrusel-Servir.png" class="d-block w-100 carousel-img" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/carousel/Carrusel-Deportes.png" class="d-block w-100 carousel-img" alt="Slide 3">
                 </div>
             </div>
 
@@ -73,40 +68,6 @@
             </button>
         </div>
 
-
-        <div class="container mt-4">
-    <div class="row justify-content-center">
-      <!-- Video 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="video-container">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566268005211%2Fvideos%2F570135732677194%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-        </div>
-        <h5 class="text-center text-uppercase mt-2">Jueves del Pueblo</h5>
-      </div>
-      <!-- Video 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ULmwiAEUvgU?si=fm_IKhwbOZuiaq4z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h5 class="text-center text-uppercase mt-2">Sesión de Cabildo</h5>
-      </div>
-    </div>
-  </div>
-
-  
-  <section class="job-section  ">
-        <div class="row">
-            <div class="col-md-4 text-box">
-                Bolsa de trabajo
-            </div>
-            <div class="col-md-4 image-box">
-               <a href="./bolsadetrabajo.php"> <img src="./assets/images/bolsa/Vacantes-Agricola-thumb.png" alt="Vacantes agrícolas" class="img-fluid"></a>
-            </div>
-            <div class="col-md-4 image-box">
-            <a href="./bolsadetrabajo.php"><img src="./assets/images/bolsa/Vacantes-Seguridad-tumb.png" alt="Vacantes seguridad" class="img-fluid"></a>
-            </div>
-        </div>
-    </section>
 
 
 
