@@ -34,7 +34,10 @@
     require("assets/layouts/header.php");
     ?>
     <!-- header End -->
-
+     <!-- Variables para la seccion de videos -->
+   <?PHP 
+   require("videos.php");
+   ?>
     <!-- Main Content -->
     <main>
         <!-- Carousel: Adaptable to Screen Size -->
@@ -79,14 +82,15 @@
       <!-- Video 1 -->
       <div class="col-md-6 mb-4">
         <div class="video-container">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566268005211%2Fvideos%2F570135732677194%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        
+        <?PHP echo $videoJuevesDeTrabajo; ?>
         </div>
         <h5 class="text-center text-uppercase mt-2">Jueves del Pueblo</h5>
       </div>
       <!-- Video 2 -->
       <div class="col-md-6 mb-4">
         <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ULmwiAEUvgU?si=fm_IKhwbOZuiaq4z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <?PHP echo $videoCabildo; ?>
         </div>
         <h5 class="text-center text-uppercase mt-2">Sesión de Cabildo</h5>
       </div>
