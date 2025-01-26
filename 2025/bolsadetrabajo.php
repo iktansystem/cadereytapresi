@@ -55,7 +55,15 @@ $images = array_filter(scandir($imageDirectory), function ($file) use ($imageDir
 
 <main class="d-flex flex-column align-items-center justify-content-center">
     <?php foreach ($images as $image): ?>
-        <div class="custom-image-container">
+        <?php
+        $idAttribute = '';
+        if (strpos($image, 'Vacantes-1-') !== false) {
+            $idAttribute = 'ID="first"';
+        } elseif (strpos($image, 'Vacantes-2-') !== false) {
+            $idAttribute = 'ID="second"';
+        }
+        ?>
+        <div class="custom-image-container" <?php echo $idAttribute; ?>>
             <img 
                 src="./assets/images/bolsa/<?php echo htmlspecialchars($image); ?>" 
                 alt="<?php echo htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)); ?>" 

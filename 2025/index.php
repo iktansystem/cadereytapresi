@@ -104,10 +104,10 @@
                 Bolsa de trabajo
             </div>
             <div class="col-md-4 image-box">
-               <a href="./bolsadetrabajo.php"> <img src="./assets/images/bolsa/thumb-Vacantes-Agricola.png" alt="Vacantes agrícolas" class="img-fluid"></a>
+               <a href="./bolsadetrabajo.php#first"> <img src="./assets/images/bolsa/thumb-Vacantes-1-Agricola.png" alt="Vacantes agrícolas" class="img-fluid"></a>
             </div>
             <div class="col-md-4 image-box">
-            <a href="./bolsadetrabajo.php"><img src="./assets/images/bolsa/thumb-Vacantes-Seguridad.png" alt="Vacantes seguridad" class="img-fluid"></a>
+            <a href="./bolsadetrabajo.php#second"><img src="./assets/images/bolsa/thumb-Vacantes-2-Seguridad.png" alt="Vacantes seguridad" class="img-fluid"></a>
             </div>
         </div>
     </section>
