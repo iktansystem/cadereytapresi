@@ -87,7 +87,7 @@ Este proyecto es una aplicación web desarrollada con el stack LAMP (Linux, Apac
 
 
 
-## Uso
+## Uso de sección de transparencia
 1. Acceder a la página principal (`index.php`) para ver el carrusel y la navegación.
 2. Navegar a `transparencia.php` para explorar las secciones Art66 y Art67.
 
@@ -165,6 +165,104 @@ El acceso a los archivos sigue la ruta lógica de la estructura. Por ejemplo:
   ```
 
 ---
+## Uso de sección de bolsa de trabajo
+# Bolsa de Trabajo - Documentación
+
+Este archivo describe la estructura de la página, recomendaciones para las imágenes utilizadas y la organización de las carpetas del proyecto.
+
+---
+
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+```
+2025/
+├── assets/
+│   ├── images/
+│   │   ├── bolsa/
+│   │   │   ├── archivo-imagen1.jpeg
+│   │   │   ├── archivo-imagen2.png
+│   │   │   ├── archivo-imagen3.svg
+│   │   │   └── ...
+├── index.php
+├── styles/
+│   ├── main.scss
+│   └── main.css
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   └── functions.php
+└── README.md
+```
+
+### Descripción de Carpetas
+
+1. **assets/images/bolsa/**:
+
+   - Contiene las imágenes que se mostrarán en la página.
+   - Todas las imágenes deben cumplir con las recomendaciones descritas en la siguiente sección.
+
+2. **styles/**:
+
+   - `main.scss`: Archivo principal en SCSS para personalización de estilos.
+   - `main.css`: Archivo CSS compilado a partir del SCSS.
+
+3. **includes/**:
+
+   - `header.php` y `footer.php`: Archivos reutilizables para el encabezado y pie de página.
+   - `functions.php`: Archivo PHP donde se pueden incluir funciones auxiliares, como la carga dinámica de imágenes.
+
+4. **index.php**:
+
+   - Archivo principal que carga el contenido dinámico de la página.
+
+---
+
+## Recomendaciones para Imágenes
+
+Para garantizar la mejor experiencia de usuario, las imágenes deben cumplir con los siguientes requisitos:
+
+1. **Tamaño Máximo:**
+
+   - Resolución recomendada: **1200px de ancho máximo**.
+   - Peso recomendado: **menor a 500 KB** para evitar tiempos de carga elevados.
+
+2. **Formatos Admitidos:**
+
+   - `jpeg`
+   - `jpg`
+   - `png`
+   - `svg`
+
+3. **Nombres de Archivo:**
+
+   - Usar nombres descriptivos, en minúsculas y sin espacios.
+   - Ejemplo: `oferta-laboral.jpeg` o `vacante-tecnico.png`.
+
+4. **Evitar Miniaturas:**
+
+   - Las imágenes cuyo nombre contenga "thumb" serán excluidas automáticamente.
+   - Ejemplo: `imagen-thumb.jpeg` no se mostrará.
+
+5. **Proporciones:**
+
+   - Se recomienda un formato de aspecto **16:9** o **4:3**.
+   - Ejemplo: 1200x675 px para formato 16:9.
+
+---
+
+## Funcionamiento Dinámico
+
+El código PHP lee automáticamente las imágenes dentro de la carpeta `assets/images/bolsa/` y genera un contenedor para cada imagen encontrada, excluyendo aquellas que:
+
+1. No tengan un formato admitido.
+2. Contengan "thumb" en su nombre.
+
+Cualquier imagen nueva que cumpla con estas condiciones se mostrará automáticamente al ser agregada a la carpeta.
+
+---
+
 
 
 # Proyecto de Página Web

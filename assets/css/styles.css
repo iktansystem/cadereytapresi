@@ -204,6 +204,84 @@ ESTILOS DEL CARRUSEL
   }
 }
 /*
+==============================
+Container videos
+==============================
+*/
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Relación de aspecto 16:9 */
+  background-color: #ffffff;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h5, .h5 {
+  color: #972850;
+  font-weight: bold;
+}
+
+/*
+=====================
+Bolsa de trabajo
+=====================
+*/
+.job-section {
+  width: 100vw;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #972850;
+  text-align: center;
+}
+
+.text-box {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .text-box, .image-box {
+    margin-bottom: 20px;
+  }
+}
+/*
+===============================
+PAge Bolsa de trabajo
+===============================
+*/
+.custom-image {
+  max-width: 85%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*
 ===============================
 Divisor horizontal
 ===============================
@@ -305,6 +383,57 @@ FOOTER
   .footer .text-md-end {
     text-align: center !important; /* Centrar texto */
     font-size: 1rem;
+  }
+}
+/*
+===============================
+Bolsa de trabajo
+===============================
+*/
+/* Contenedor principal de la galería de imágenes */
+.image-gallery {
+  display: flex; /* Usa flexbox para la disposición */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+  gap: 16px; /* Espaciado entre elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: stretch; /* Estira los elementos verticalmente */
+}
+
+/* Elemento individual de la galería */
+.gallery-item {
+  display: flex; /* Flexbox para centrado interno */
+  flex-direction: column; /* Alinea elementos en columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  margin-bottom: 16px; /* Espaciado inferior entre elementos */
+}
+
+/* Estilos para las imágenes dentro de los elementos de la galería */
+.gallery-item img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100vh; /* Altura igual a la del viewport */
+  -o-object-fit: cover;
+     object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+  border-radius: 8px; /* Bordes redondeados para un efecto visual agradable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves al pasar el mouse */
+}
+
+/* Efecto hover para la imagen */
+.gallery-item img:hover {
+  transform: scale(1.15); /* Aumenta ligeramente el tamaño de la imagen */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para resaltar la imagen */
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .gallery-item img {
+    height: 50vh; /* Reduce la altura para ajustarse a pantallas más pequeñas */
+  }
+}
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .gallery-item img {
+    height: 30vh; /* Ajusta la altura para móviles */
   }
 }
 /*!

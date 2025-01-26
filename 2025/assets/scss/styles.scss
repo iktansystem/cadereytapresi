@@ -281,6 +281,30 @@ Bolsa de trabajo
 
 /*
 ===============================
+PAge Bolsa de trabajo
+===============================
+*/
+main {
+    width: 100%; // Tomar el ancho completo del viewport
+    padding: 2rem 0; // Espaciado arriba y abajo
+}
+
+.custom-image-container {
+    width: 100%; // Ocupa todo el ancho
+    max-width: 600px; // Limitar el tamaño máximo a 600px
+    margin: 1rem auto; // Centrar horizontalmente y agregar margen entre contenedores
+    text-align: center; // Centrar contenido dentro del contenedor
+}
+
+.custom-image {
+    width: 100%; // La imagen ocupa todo el ancho del contenedor
+    height: auto; // Mantener proporciones
+    border-radius: 10px; // Opcional: esquinas redondeadas
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Sombra opcional
+}
+
+/*
+===============================
 Divisor horizontal
 ===============================
 */

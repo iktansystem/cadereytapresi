@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Etiquetas para SEO-->
     <meta name="description"
-        content="Sitio web del Municipio de Cadereyta de Montes" />
+        content="Sitio web oficial del Municipio de Cadereyta de Montes, Quéretaro" />
     <meta name="keywords"
-        content="Cadereyta de Montes,presidencia municipal" />
+        content="Presidencia municipal, Cadereyta de montes, Queŕetaro" />
     <meta name="author" content="Cadereyta de Montes" />
     <meta property="og:title" content="Cadereyta de Montes" />
     <meta property="og:description"
         content="Servir para transformar" />
     <meta property="og:image" content="https://cadereytademontes.gob.mx/assets/images/logo/Logotipo-Municipio-Blanco-H.png" />
     <meta property="og:url" content="https://cadereytademontes.gob.mx" />
-    <title>Cadereyta</title>
+    <title>Cadereyta de Montes, Querétaro</title>
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo/favicon.ico" type="image/x-icon" />
     <!-- Link to external CSS file -->
@@ -100,10 +100,10 @@
                 Bolsa de trabajo
             </div>
             <div class="col-md-4 image-box">
-               <a href="./bolsadetrabajo.php"> <img src="./assets/images/bolsa/Vacantes-Agricola-thumb.png" alt="Vacantes agrícolas" class="img-fluid"></a>
+               <a href="./bolsadetrabajo.php"> <img src="./assets/images/bolsa/thumb-Vacantes-Agricola.png" alt="Vacantes agrícolas" class="img-fluid"></a>
             </div>
             <div class="col-md-4 image-box">
-            <a href="./bolsadetrabajo.php"><img src="./assets/images/bolsa/Vacantes-Seguridad-tumb.png" alt="Vacantes seguridad" class="img-fluid"></a>
+            <a href="./bolsadetrabajo.php"><img src="./assets/images/bolsa/thumb-Vacantes-Seguridad.png" alt="Vacantes seguridad" class="img-fluid"></a>
             </div>
         </div>
     </section>

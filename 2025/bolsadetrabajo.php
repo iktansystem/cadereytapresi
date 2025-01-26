@@ -28,28 +28,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body >
     <!-- header Start -->
     <?PHP
     require("assets/layouts/header.php");
     ?>
     <!-- header End -->
 
-    <!-- Main Content -->
-    <main>
-    <div class="container-fluid">
-        <div class="row image-gallery">
-            <div class="col-12 col-md-6 col-lg-4 gallery-item">
-                <img src="./assets/images/bolsa/Vacantes-Agricola.jpeg" alt="Sample 1" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 gallery-item">
-                <img src="./assets/images/bolsa/Vacantes-Seguridad.jpeg" alt="Sample 2" class="img-fluid">
-            </div>
-            
-        </div>
-    </div>
+    <?php
+// Directorio donde están las imágenes
+$imageDirectory = __DIR__ . '/assets/images/bolsa';
 
-    </main>
+// Extensiones permitidas
+$allowedExtensions = ['jpeg', 'jpg', 'svg', 'png'];
+
+// Escanea el directorio para obtener los archivos
+$images = array_filter(scandir($imageDirectory), function ($file) use ($imageDirectory, $allowedExtensions) {
+    $filePath = $imageDirectory . '/' . $file;
+    $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
+    // Validar que sea archivo, tenga una extensión permitida y no contenga "thumb"
+    return is_file($filePath) 
+        && in_array($extension, $allowedExtensions) 
+        && stripos($file, 'thumb') === false; // Excluir si contiene "thumb"
+});
+?>
+
+<main class="d-flex flex-column align-items-center justify-content-center">
+    <?php foreach ($images as $image): ?>
+        <div class="custom-image-container">
+            <img 
+                src="./assets/images/bolsa/<?php echo htmlspecialchars($image); ?>" 
+                alt="<?php echo htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)); ?>" 
+                class="img-fluid custom-image">
+        </div>
+    <?php endforeach; ?>
+</main>
+
 
 
     <!-- footer Start -->

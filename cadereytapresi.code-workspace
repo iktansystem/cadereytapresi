@@ -13,9 +13,10 @@
 			{
 				"format": "expanded",
 				"extensionName": ".css",
-				"savePath": "./assets/css",
+				"savePath": "./2025/assets/css",
 				"savePathReplacementPairs": null
 			}
-		]
+		],
+		"liveSassCompile.settings.forceBaseDirectory": ""
 	}
 }
